@@ -1,18 +1,17 @@
-````markdown
 # Medical RAG System
 
-A Retrieval-Augmented Generation (RAG) system for clinical notes and diagnostic knowledge graphs, using Google Gemini, FAISS, and Sentence Transformers to provide accurate medical responses.
+A Retrieval-Augmented Generation (RAG) system for clinical notes and diagnostic knowledge graphs, using Google Gemini, FAISS, and Sentence Transformers.
 
 ---
 
 ## Features
 
-- Extracts and processes clinical notes and diagnostic knowledge graphs from RAR files.  
-- Converts nested JSON files into structured CSVs for easier data handling.  
-- Cleans and prepares text for embeddings using `SentenceTransformer`.  
-- Builds a FAISS index for fast document retrieval.  
-- Generates responses using Google Gemini API based on retrieved documents.  
-- Provides a Gradio interface for interactive testing and evaluation of queries.  
+- Extracts and processes clinical notes and diagnostic knowledge graphs from RAR files.
+- Converts nested JSON files into structured CSVs for easier data handling.
+- Cleans and prepares text for embeddings using `SentenceTransformer`.
+- Builds a FAISS index for fast document retrieval.
+- Generates responses using Google Gemini API based on retrieved documents.
+- Provides a Gradio interface for interactive testing and evaluation of queries.
 - Saves embeddings, FAISS index, and document mappings for reuse.
 
 ---
@@ -24,8 +23,6 @@ Install required packages:
 ```bash
 pip install rarfile
 apt-get install -y unrar
-pip install pandas numpy tqdm transformers langchain sentence-transformers faiss-cpu gradio rank_bm25 nltk
-````
 
 ---
 
